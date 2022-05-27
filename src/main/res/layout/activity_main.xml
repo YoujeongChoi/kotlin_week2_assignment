@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#212121">
+
+    // 보라색 부분
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4B2F6C">
+
+        // 상단 메뉴
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_purple_constraint01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/main_purple_constraint01_imageButton01"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_side_bar"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/main_purple_constraint01_imageView01"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/main_purple_constraint01_imageButton02"
+                app:layout_constraintStart_toEndOf="@+id/main_purple_constraint01_imageButton01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_img_coffebean_logo" />
+
+            <ImageButton
+                android:id="@+id/main_purple_constraint01_imageButton02"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_alert" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        // 회원 정보
+        <LinearLayout
+            android:id="@+id/main_purple_container02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_purple_constraint01"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_purple_constraint02"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="4">
+
+                <TextView
+                    android:id="@+id/main_purple_container02_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PINK CLUB"
+                    android:textColor="#FFB6C2"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/main_purple_container02_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="누구보다 괜찮은,"
+                    android:textColor="#BDB1CC"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_purple_container02_textView01" />
+
+                <TextView
+                    android:id="@+id/main_purple_container02_textView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="6dp"
+                    android:text="최유정"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/main_purple_container02_textView02"
+                    app:layout_constraintTop_toBottomOf="@+id/main_purple_container02_textView01" />
+
+                <TextView
+                    android:id="@+id/main_purple_container02_textView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="12dp"
+                    android:text="님"
+                    android:textColor="#BDB1CC"
+                    app:layout_constraintStart_toEndOf="@+id/main_purple_container02_textView03"
+                    app:layout_constraintTop_toBottomOf="@+id/main_purple_container02_textView01" />
+
+                <ImageButton
+                    android:id="@+id/main_purple_container02_imageButton3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toEndOf="@+id/main_purple_container02_textView04"
+                    app:layout_constraintTop_toBottomOf="@+id/main_purple_container02_textView01"
+                    app:srcCompat="@drawable/main_icon_refresh"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/main_purple_container02_view"
+                android:layout_width="2dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="#573C76"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_purple_container02_constraint02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/main_purple_container02_constraint02_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="쿠폰"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/main_purple_container02_constraint02_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    app:layout_constraintStart_toEndOf="@+id/main_purple_container02_constraint02_textView01"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/main_purple_container02_constraint02_imageButton01"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toEndOf="@+id/main_purple_container02_constraint02_textView02"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/main_icon_more_right"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        // 펫 등록 버튼
+        <ImageButton
+            android:id="@+id/main_purple_container03_imageButton"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/main_purple_container02"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/main_img_register_pet"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        // 커피빈 카드
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_purple_container03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_purple_container03_imageButton"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/main_purple_container03_imageView01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_card" />
+
+            <TextView
+                android:id="@+id/main_purple_container03_textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="커피빈카드"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/main_purple_container03_imageView01" />
+
+            <ImageView
+                android:id="@+id/main_purple_container03_imageView02"
+                android:layout_width="23dp"
+                android:layout_height="18dp"
+                app:layout_constraintStart_toEndOf="@+id/main_purple_container03_textView01"
+                app:srcCompat="@drawable/main_img_barcode"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/main_purple_container03_textView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,500원"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/main_purple_container03_imageView03"
+                android:layout_marginEnd="5dp"/>
+
+            <ImageView
+                android:id="@+id/main_purple_container03_imageView03"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/main_icon_more_under"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    // 두번째 검정색부분 - 퍼플카드
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#404040">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_second_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="25dp">
+
+            <ImageView
+                android:id="@+id/main_second_section_imageView01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_purple_card" />
+
+            <TextView
+                android:id="@+id/main_second_section_textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="퍼플카드"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/main_second_section_imageView01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/main_second_section_imageView02"
+                android:layout_width="23dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/main_second_section_textView01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_img_barcode" />
+
+            <TextView
+                android:id="@+id/main_second_section_textView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="3 / 12"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toStartOf="@+id/main_second_section_imageView03"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/main_second_section_imageView03"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_more_under" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    // 하단부분
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_third_section_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="20dp"
+            android:paddingTop="30dp"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:id="@+id/main_third_section_01_imageView01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_purple_order"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/main_third_section_01_textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:text="퍼플오더"
+                android:textColor="#CC98F1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_01_imageView01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/main_third_section_01_imageView02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_01_textView01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_more_right_purple" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/main_third_section_view01"
+            android:layout_width="175dp"
+            android:layout_height="1dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:background="#535353" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_third_section_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/main_third_section_02_imageView01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_star" />
+
+            <TextView
+                android:id="@+id/main_third_section_02_textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="나만의 메뉴"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_02_imageView01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/main_third_section_02_imageView02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_02_textView01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_more_right" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/main_third_section_view02"
+            android:layout_width="175dp"
+            android:layout_height="1dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:background="#535353" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_third_section_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/main_third_section_03_imageView01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_gift" />
+
+            <TextView
+                android:id="@+id/main_third_section_03_textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:text="선물하기"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_03_imageView01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/main_third_section_03_imageView02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/main_third_section_03_textView01"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_icon_more_right" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

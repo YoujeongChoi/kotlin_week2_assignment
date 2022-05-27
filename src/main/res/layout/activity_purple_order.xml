@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".purpleOrderActivity"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4B2F6C">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/purple_order_container01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/purple_order_container01_imageButton01"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/purple_order_icon_more_left"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="퍼플오더"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/purple_order_container01_imageButton02"
+                app:layout_constraintStart_toEndOf="@+id/purple_order_container01_imageButton01"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"/>
+
+
+            <ImageButton
+                android:id="@+id/purple_order_container01_imageButton02"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/purple_icon_cart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/purple_order_container02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+       <TextView
+           android:gravity="center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="주문하실 매장을 선택해주세요."
+           android:textColor="#FFFFFF"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:layout_weight="2"
+           android:background="#363636"
+           android:paddingStart="15dp"
+           android:paddingTop="15dp"
+           android:paddingBottom="15dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장선택"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:background="#DEDEDE"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/purple_order_container03_textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="오늘의 추천메뉴"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/purple_order_container04"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/purple_order_container04_category01"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/purple_order_container04_category01_imageButton"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/purple_img_blackdiemon_iced"
+                    android:background="@android:color/transparent"
+                     />
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category01_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="블랙다이몬 아이스커피"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category01_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6,000원"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#4B2F6C"
+                    android:layout_marginTop="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/purple_order_container04_category02"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/purple_order_container04_category02_imageButton"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/purple_img_blackdiemon_latte"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category02_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="블랙다이몬 카페라떼"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category02_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6,500원"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#4B2F6C"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/purple_order_container04_category03"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/purple_order_container04_category03_imageButton"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/purple_img_blackdiemon_sua"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category03_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="블랙다이몬 카페수아"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category03_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7,500원"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#4B2F6C"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/purple_order_container04_category04"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/purple_order_container04_category04_imageButton"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/purple_img_oksu"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category04_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="초당 옥슈크림 라떼"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category04_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6,800원"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#4B2F6C"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/purple_order_container04_category05"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/purple_order_container04_category05_imageButton"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/purple_img_hanrabong_ib"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category05_textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="파인한라봉요거트 IB"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/purple_order_container04_category05_textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6,800원"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#4B2F6C"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/purple_order_container05_textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="최근 주문한 메뉴"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
